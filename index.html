@@ -13,7 +13,9 @@
             box-sizing: border-box;
         }
 
-
+        .heading {
+            color: white;
+        }
 
         body {
             display: flex;
@@ -21,6 +23,17 @@
             align-items: center;
             min-height: 80vh;
             flex-direction: column;
+            background: url("img.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-left: 42rem;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+
         }
 
         input {
@@ -30,7 +43,7 @@
             border-radius: 8px;
             /* border: none; */
             border: 2px solid black;
-            background-color: rgb(247, 247, 247);
+            background-color: rgb(255, 255, 255);
             opacity: 0.4;
             box-shadow: 3px 5px black;
             outline: none;
