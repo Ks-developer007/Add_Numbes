@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding two Numbers and Display them</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            flex-direction: column;
+        }
+
+        input {
+            margin: 10px;
+            padding: 8px;
+            width: 30%;
+            border-radius: 8px;
+            /* border: none; */
+            border: 2px solid black;
+            background-color: rgb(247, 247, 247);
+            opacity: 0.4;
+            box-shadow: 3px 5px black;
+            outline: none;
+
+        }
+
+        .btn button {
+            padding: 10px;
+            width: 60px;
+            color: white;
+            background-color: green;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(57, 201, 66);
+            color: whitesmoke;
+        }
+
+        #result-box {
+            margin: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Adding two Numbers and Display them</h1>
+    <input type="text" title="number" id="number1" placeholder="Enter your first number">
+    <input type="text" title="number" id="number2" placeholder="Enter your second number">
+    <div class="btn">
+        <button onclick="addnumbers()">Add</button>
+    </div>
+    <div id="result-box"></div>
+</body>
+<script src="index.js"></script>
+
+</html>
